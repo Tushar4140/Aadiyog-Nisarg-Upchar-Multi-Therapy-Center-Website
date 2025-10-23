@@ -3,163 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>आदियोग निसर्ग उपचार मल्टी थेरेपी सेंटर | Coming Soon</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+  <title>आदियोग निसर्ग उपचार मल्टी थेरेपी सेंटर | Coming Soon</title>
 
-  <style>
-    /* ====== BASIC RESET ====== */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <!-- Favicon (Leaf Emoji) -->
+  <link rel="icon" 
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
 
-    body {
-      font-family: "Poppins", "Noto Sans Devanagari", sans-serif;
-      background: linear-gradient(135deg, #d8f3dc, #b7e4c7);
-      color: #1b4332;
-      text-align: center;
-      overflow-x: hidden;
-      min-height: 100vh;
-      position: relative;
-    }
-
-    /* ====== HEADER ====== */
-    header {
-      padding: 15px 10px;
-      background: rgba(255, 255, 255, 0.3);
-      border-radius: 0 0 20px 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      margin-bottom: 10px;
-    }
-
-    header h1 {
-      font-size: 1rem;
-      color: #2d6a4f;
-    }
-
-    header p {
-      margin: 5px 0;
-      font-size: 1.1rem;
-    }
-
-    .om {
-      font-size: 1.4rem;
-      color: #007f5f;
-      font-weight: bold;
-    }
-
-    /* ====== MAIN TITLE ====== */
-    .title {
-      margin-top: 15px;
-    }
-
-    .title h2 {
-      font-size: 2rem;
-      color: #081c15;
-    }
-
-    .title h3 {
-      font-size: 1.2rem;
-      color: #2d6a4f;
-      margin-top: 5px;
-    }
-
-    /* ====== COMING SOON ====== */
-    .coming-soon {
-      font-size: 2.2rem;
-      font-weight: bold;
-      color: #2d6a4f;
-      margin: 25px 0;
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 0.3; }
-      50% { opacity: 1; }
-    }
-
-    /* ====== SECTIONS ====== */
-    .section {
-      background: rgba(255, 255, 255, 0.6);
-      margin: 20px auto;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      max-width: 1100px;
-      width: 90%;
-    }
-
-    .section h4 {
-      font-size: 1.3rem;
-      color: #1b4332;
-      margin-bottom: 15px;
-      border-bottom: 3px solid #74c69d;
-      display: inline-block;
-      padding-bottom: 5px;
-    }
-
-    /* ====== GRID STYLES ====== */
-    .therapy-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 10px;
-      text-align: center;
-    }
-
-    .therapy-item {
-      background: rgba(255, 255, 255, 0.7);
-      padding: 10px;
-      border-radius: 10px;
-      font-size: 0.95rem;
-      color: #081c15;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .therapy-item:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    /* ====== CONTACT SECTION ====== */
-    .contact {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #2d6a4f;
-    }
-
-    .contact strong {
-      color: #1b4332;
-      font-size: 1.05rem;
-    }
-
-    footer {
-      margin: 30px 0 15px;
-      font-size: 0.9rem;
-      color: #081c15;
-    }
-
-    /* ====== RESPONSIVE ====== */
-    @media (max-width: 600px) {
-      header h1, .title h3 {
-        font-size: 0.9rem;
-      }
-
-      .title h2 {
-        font-size: 1.4rem;
-      }
-
-      .coming-soon {
-        font-size: 1.6rem;
-      }
-
-      .therapy-item {
-        font-size: 0.9rem;
-        padding: 8px;
-      }
-    }
-  </style>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <!-- ===== HEADER ===== -->
   <header>
@@ -248,30 +101,13 @@
 
   <footer>© 2025 Aadiyog Nisarg Upchar Multi Therapy Centre</footer>
 
-  <script>
-    // 🍃 Floating leaf animation
-    const leafEmoji = "🍃";
-    for (let i = 0; i < 12; i++) {
-      const leaf = document.createElement("div");
-      leaf.textContent = leafEmoji;
-      leaf.style.position = "fixed";
-      leaf.style.left = Math.random() * 100 + "vw";
-      leaf.style.top = -10 + "px";
-      leaf.style.fontSize = Math.random() * 20 + 20 + "px";
-      leaf.style.opacity = 0.5;
-      leaf.style.animation = `fall ${4 + Math.random() * 6}s linear infinite`;
-      leaf.style.animationDelay = Math.random() * 5 + "s";
-      document.body.appendChild(leaf);
-    }
-
-    const style = document.createElement("style");
-    style.innerHTML = `
-      @keyframes fall {
-        0% { transform: translateY(0) rotate(0deg); }
-        100% { transform: translateY(110vh) rotate(360deg); }
-      }
-    `;
-    document.head.appendChild(style);
-  </script>
+  <!-- External JS -->
+  <script src="script.js"></script>
 </body>
 </html>
+
+
+
+</body>
+</html>
+
